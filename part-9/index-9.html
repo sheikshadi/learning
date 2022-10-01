@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style-9.css">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body>
+    <div id="app">
+        <button :class="{active: acctiveClass == 'red'}" @click="setClass('red')">Red</button>
+        <button @click="setClass('green')">Green</button>
+        <button @click="setClass('blue')">Blue</button>
+
+        <div :class="activeClass"></div>
+    </div>
+    <script src="app-9.js"></script>
+</body>
+</html>

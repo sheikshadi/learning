@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style-14.css">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body>
+    <div id="app">
+        <h3>Skills</h3>
+        <button @click="toggle">show/hide</button><br><br>
+        <div class="card" v-if="show">
+        </div>
+
+        <br><hr><br>
+
+        <ul>
+            <li v-for="(skill, i) in skills" @click="removeSkill(i)" :key="skill.name">
+                <p>{{i + 1}}.{{skill.name}} .
+                    <span v-if="skill. Expreince < 4">Beginner</span>
+                    <span v-else-if="skill. Expreince < 3">proficent</span>
+                    <span v-else="skill. Expreince < 7">Expert</span>
+                    <br>
+                </p>
+            </li>
+        </ul>
+    </div>
+    <script src="app-14.js"></script>
+</body>
+</html>
