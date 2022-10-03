@@ -1,0 +1,189 @@
+/* --------Ticket App ---------*/
+.app-title{
+    text-align: center;
+}
+
+.ticket-app{
+    width: 500px;
+    /* max-width: 100%;
+    margin: 22px; */
+    margin-left: 30%;
+    min-height: 300px;
+    padding: 10px;
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 0 0 3px 2px #dedede;
+}
+
+.ticket-app__top{
+    display: flex;
+}
+
+.seat-states{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.seat-state{
+    margin: 3px;
+    min-height: 5px;
+    min-width: 33px;
+    display: flex;
+    margin-right: 22px;
+}
+
+.seat-state__color{
+    width: 20px;
+    border: 1px solid gray;
+}
+
+.seat-state__text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.4;
+    margin-left: 4px;
+}
+
+.ticket-app__bottom{
+    display: flex;
+    margin-top: 11px;
+}
+
+.ticket-app__left{
+    width: 170px;
+}
+
+.ticket-app__instruction{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.ticket-app__right{
+    flex: 1;
+    padding-left: 22px;
+}
+
+.bus{
+    border: 1px solid gray;
+    padding: 4px;
+}
+
+.bus__top{
+    display: flex;
+    justify-content: space-between;
+}
+
+.bus__door{
+    width: 60px;
+    border: 1px solid gray;
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bus__driver{
+    width: 60px;
+    border: 1px solid gray;
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seats{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 11px;
+}
+
+.seat{
+    margin: 4px;
+    border: 1px solid gray;
+    padding: 3px;
+    min-height: 11px;
+    cursor: pointer;
+    font-size: 15px;
+    width: 20px;
+}
+
+.seat--sold{
+    background-color: red;
+    color: #fff;
+}
+
+.seat--booked{
+    background-color: gray;
+}
+
+.seat--selected{
+    background-color: #00ff00;
+}
+
+.seat:hover{
+    font-weight:bold;
+}
+
+.seat:nth-child(4n-2){
+    margin-right: 12px;
+}
+
+.seat:nth-child(4n-2){
+    margin-left: 12px;
+}
+
+.info{
+    margin-top: 11px;
+}
+
+.button_confirm{
+    margin-top: 11px;
+    margin-left: 0;
+    margin: 0;
+}
+
+.selected-seats th,
+.selected-seats td{
+    padding: 5px 40px;
+    text-align: left;
+    border: 1px solid gray;
+}
+
+.ticket-app input[type='text']{
+    width: 40%;
+    padding: 4px 9px;
+}
+
+.input2{
+    margin-right: 10px;
+}
+
+.confirm-button{
+    border: 1px solid blue;
+    background-color: #00DDa2;
+    color: #fff;
+    cursor: pointer;
+    padding: 5px 150px;
+    width: 0;
+    margin-top: 11px;
+}
+
+.confirm-button__disaled{
+    opacity: 0.4;
+}
+
+.confirm-dialog{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+    background-color: #fff;
+    text-align: center;
+    padding: 33px;
+}
