@@ -239,4 +239,4 @@ var app = Vue.createApp({
 
 app.mount('#app');
 
-console.log('part18')
+console.log('part')
