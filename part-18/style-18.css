@@ -148,7 +148,7 @@
 
 .selected-seats th,
 .selected-seats td{
-    padding: 5px 40px;
+    padding: 5px 35px;
     text-align: left;
     border: 1px solid gray;
 }
@@ -172,9 +172,7 @@
     margin-top: 11px;
 }
 
-.confirm-button__disaled{
-    opacity: 0.4;
-}
+
 
 .confirm-dialog{
     position: absolute;

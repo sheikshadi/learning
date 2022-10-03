@@ -191,7 +191,7 @@ var app = Vue.createApp({
                 return;
             }
 
-            if(this.selectedSeats.length > 2){
+            if(clickedSeat.type == 'available' && this.selectedSeats.length > 2){
                 alert('3 cannot seats');
                 return;
             }
